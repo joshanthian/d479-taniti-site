@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Your Stay - Taniti</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="booking-page">
+
+  <header class="navbar">
+    <a href="index.html" class="logo"><img src="images/logo.png" alt="Taniti Logo" /></a>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+      <a href="accommodations.html">Accommodations</a>
+      <a href="activities.html">Activities</a>
+      <a href="dining.html">Dining</a>
+      <a href="transportation.html">Transportation</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="search-container">
+      <input type="text" placeholder="Search..." />
+      <button>Search</button>
+    </div>
+  </header>
+
+  <main class="booking-form-container">
+    <form class="booking-form">
+      <h2>Book Your Stay</h2>
+
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Full Name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Email" required />
+
+      <label for="arrival">Arrival</label>
+      <input type="date" id="arrival" name="arrival" required />
+
+      <label for="departure">Departure</label>
+      <input type="date" id="departure" name="departure" required />
+
+      <div class="guest-counts">
+        <div class="guest-group">
+          <label for="adults">Adults</label>
+          <input type="number" id="adults" name="adults" min="0" placeholder="Adults" required />
+        </div>
+        <div class="guest-group">
+          <label for="kids">Kids</label>
+          <input type="number" id="kids" name="kids" min="0" placeholder="Kids" />
+        </div>
+      </div>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Special requests or message..."></textarea>
+
+      <button type="submit" class="book-btn">Book Now</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Taniti Island. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
